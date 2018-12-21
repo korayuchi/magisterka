@@ -1,0 +1,19 @@
+<ngb-accordion #acc="ngbAccordion">
+    <ngb-panel id="toggle-1" title="1">
+      <ng-template ngbPanelContent>
+ 
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel id="toggle-2" title="2">
+      <ng-template ngbPanelContent>
+  
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+  
+  <hr/>
+  
+  <button class="btn btn-sm btn-outline-primary mr-2" (click)="acc.toggle('toggle-1')">Pokaż 1</button>
+  <button class="btn btn-sm btn-outline-primary mr-2" (click)="acc.toggle('toggle-2')">Pokaż 2</button>
+  
+  

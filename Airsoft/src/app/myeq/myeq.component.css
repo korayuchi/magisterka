@@ -1,0 +1,90 @@
+#glowa{
+    padding: 19px;
+    border: 6px ridge #D6D6D6;
+    text-align: center;
+    display:block;
+    float:left;
+    width:170px;
+    height:170px;
+    margin-left: 550px;   
+    margin-top: 0px; 
+}
+#kamizelka{
+    padding: 19px;
+    border: 6px ridge #D6D6D6;
+    text-align: center;
+    display:block;
+    float:left;
+    width:170px;
+    height:170px;
+    margin-left: 550px;   
+    margin-top: 15px; 
+}
+#spodnie{
+    padding: 19px;
+    border: 6px ridge #D6D6D6;
+    text-align: center;
+    display:block;
+    float:left;
+    width:170px;
+    height:170px;
+    margin-left: 550px;   
+    margin-top: 15px; 
+}
+#rekawice{
+    padding: 19px;
+    border: 6px ridge #D6D6D6;
+    text-align: center;
+    display:block;
+    float:right;
+    width:170px;
+    height:170px;
+    margin-right: 350px;
+    /* margin-left: 10px;    */
+     margin-top: -160px;
+}
+#boczniak{
+    padding: 19px;
+    border: 6px ridge #D6D6D6;
+    text-align: center;
+    display:block;
+    float:right;
+    width:170px;
+    height:170px;
+    margin-right: 100px;
+    /* margin-left: 10px;    */
+     margin-top: -150px;
+}
+#plecak{
+    padding: 19px;
+    border: 6px ridge #D6D6D6;
+    text-align: center;
+    display:block;
+    float:right;
+    width:170px;
+    height:170px;
+    margin-right: 300px;   
+    margin-top: 15px; 
+}
+#glowna{
+    padding: 19px;
+    border: 6px ridge #D6D6D6;
+    text-align: center;
+    display:block;
+    float:right;
+    width:170px;
+    height:170px;
+    margin-right: 265px;   
+    margin-top: -345px; 
+}
+#buty{
+    padding: 19px;
+    border: 6px ridge #D6D6D6;
+    text-align: center;
+    display:block;
+    float:left;
+    width:170px;
+    height:170px;
+    margin-left: 550px;   
+    margin-top: 15px; 
+}

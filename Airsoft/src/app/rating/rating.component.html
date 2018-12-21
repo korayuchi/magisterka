@@ -1,0 +1,7 @@
+<ngb-rating [(rate)]="selected" (hover)="hovered=$event" (leave)="hovered=0" [readonly]="readonly" style="font-size:2.3em;"></ngb-rating>
+<hr>
+<pre>
+</pre>
+<button class="btn  btn-lg btn-outline-{{readonly ? 'danger' : 'success'}}" (click)="readonly = !readonly">
+  {{ readonly ? "Edytuj" : "Zapisz ocenę"}}
+</button>

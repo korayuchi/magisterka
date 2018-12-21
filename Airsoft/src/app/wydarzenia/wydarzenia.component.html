@@ -1,0 +1,45 @@
+<app-menu></app-menu>
+<h3 style="text-align:center;margin-top: 10px;font-family: 'Open Sans Condensed', sans-serif;">Sprawdź dostępne rozgrywki, weź w nich udział i oceń!</h3>
+<ngbd-modal-options1></ngbd-modal-options1>
+<agm-map [zoom]="11" [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng">
+      <agm-info-window>
+          <h3 style="text-align: center"><strong>CTF</strong></h3>
+      <p style="font-size: 17px">
+        Eliminacja <br>
+        1 życie/resp 1min <br>
+        Warunki wygranej: <br>
+        Wyeliminowanie CAŁEJ przeciwnej drużyny 
+        </p>
+        <app-rating></app-rating>
+    </agm-info-window>
+    </agm-marker>
+    <agm-marker [latitude]="lat1" [longitude]="lng1">
+      <agm-info-window>
+        <h3 style="text-align: center"><strong>CTF</strong></h3>
+        <p>Walka o flagę <br>
+          Przejmij i broń <br>
+          1 życie/resp 1min <br>
+          Warunki wygranej: <br>
+Rozgrywka toczy się do momentu aż jedna ze stron przejmie i obroni flagę przez 15min. 
+          </p>
+          <app-rating></app-rating>
+      </agm-info-window>
+    </agm-marker>
+    <agm-marker [latitude]="lat2" [longitude]="lng2">
+      <agm-info-window>
+        <h3><strong>Atak/obrona</strong></h3>
+        <p>Eliminacja<br>
+         1 życie/ resp 1min <br>
+         Zasady dodatkowe: <br>
+         obrońcy mogą się nie odradzać <br>
+         Warunki wygranej: <br>
+         Flaga po zakończeniu czasu znajduje się w bazie obrońców! 
+          </p>
+          <app-rating></app-rating>
+      </agm-info-window>
+    </agm-marker>
+  </agm-map>
+  <!-- <div class="adlisting">      
+ <ad-listing></ad-listing>
+</div> -->

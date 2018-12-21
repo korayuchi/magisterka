@@ -1,0 +1,57 @@
+<div class="content columns" *ngIf="ad">
+  <div class="column">
+
+    <form  [formGroup]="adForm" novalidate>
+
+    <h3>Dołącz do wydarzenia</h3>
+
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Imię i nazwisko</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input class="input" type="text"
+                   formControlName="title"
+                   (change)="saveAdChanges()"
+                   [ngClass]="{
+                                'is-success' :  adForm.get('title').valid &&  adForm.get('title').dirty,
+                                'is-danger'  :  !adForm.get('title').valid
+                              }">
+          </div>
+
+          <p style="color:red;" [hidden]="adForm.get('title').valid">
+            Wymagane
+          </p>
+
+        </div>
+      </div>
+    </div>
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Informacje dodatkowe</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea"
+                  formControlName="content"
+                  (change)="saveAdChanges()"
+                  [ngClass]="{
+                               'is-success' :  adForm.get('content').valid &&  adForm.get('content').dirty,
+                               'is-danger'  :  !adForm.get('content').valid
+                             }">
+              </textarea>
+              <p class="error" [hidden]="adForm.get('content').valid">Wypełnij pola poprawnie</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+<button class="btn btn-primary" (click)="startNewAdListing()"  >Zapisz się do wydarzenia</button>
+<!-- *ngIf="!ad -->

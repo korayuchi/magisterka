@@ -1,0 +1,3 @@
+<button mat-raised-button color="primary" (click)="fileInput.click()">Dodaj</button>
+  <input #fileInput type="file" (change)="chooseFiles($event)" style="display:none;" />
+  <img style=" " src="{{imgsrc | async}}">
