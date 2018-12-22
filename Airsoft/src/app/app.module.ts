@@ -69,7 +69,7 @@ import { NgbdModalOptions1} from '../app/modal-options1';
     AngularFireStorageModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAs3LRMSfJQ1d2CzGrldAhGJD9CiAu9AEc'
-    })
+    }),
 
   ],
   providers: [AuthService, UserService, UserResolver, AuthGuard],
