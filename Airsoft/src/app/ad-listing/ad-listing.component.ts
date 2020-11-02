@@ -32,8 +32,12 @@ export class AdListingComponent  {
 
   private buildForm() {
     this.adForm = this.fb.group({
-      title:    ['', Validators.required ],
-      content:  ['', Validators.required ],
+      Rola: ['', Validators.required ],
+      nazwaWydarzenia: ['', Validators.required ],
+      ImieINazwisko: ['', Validators.required ],
+      InfoDodatkowe: ['', Validators.required ],
+      // title:    ['', Validators.required ],
+      // content:  ['', Validators.required ],
     });
   }
 

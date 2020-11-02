@@ -49,7 +49,7 @@ export class UploadComponent {
     const uploadTask = this.storage.upload('/angfire2store/' + this.user.uid + '/' + this.type , file).then( () => {
       this.fetchImage();
     }) .catch( () => {
-      console.log('Error in uploading the image');
+      console.log('Błąd przy przesyłaniu');
     });
   }
 }

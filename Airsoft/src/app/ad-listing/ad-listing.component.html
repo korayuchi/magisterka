@@ -14,15 +14,61 @@
         <div class="field">
           <div class="control">
             <input class="input" type="text"
-                   formControlName="title"
+                   formControlName="ImieINazwisko"
                    (change)="saveAdChanges()"
                    [ngClass]="{
-                                'is-success' :  adForm.get('title').valid &&  adForm.get('title').dirty,
-                                'is-danger'  :  !adForm.get('title').valid
+                                'is-success' :  adForm.get('ImieINazwisko').valid &&  adForm.get('ImieINazwisko').dirty,
+                                'is-danger'  :  !adForm.get('ImieINazwisko').valid
                               }">
           </div>
 
-          <p style="color:red;" [hidden]="adForm.get('title').valid">
+          <p style="color:red;" [hidden]="adForm.get('ImieINazwisko').valid">
+            Wymagane
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Nazwa wydarzenia</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input class="input" type="text"
+                   formControlName="nazwaWydarzenia"
+                   (change)="saveAdChanges()"
+                   [ngClass]="{
+                                'is-success' :  adForm.get('nazwaWydarzenia').valid &&  adForm.get('nazwaWydarzenia').dirty,
+                                'is-danger'  :  !adForm.get('nazwaWydarzenia').valid
+                              }">
+          </div>
+
+          <p style="color:red;" [hidden]="adForm.get('nazwaWydarzenia').valid">
+            Wymagane
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Rola gracza<br>(wsparcie, szturomiec, zwiadowca, medyk)</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input class="input" type="text"
+                   formControlName="Rola"
+                   (change)="saveAdChanges()"
+                   [ngClass]="{
+                                'is-success' :  adForm.get('Rola').valid &&  adForm.get('Rola').dirty,
+                                'is-danger'  :  !adForm.get('Rola').valid
+                              }">
+          </div>
+
+          <p style="color:red;" [hidden]="adForm.get('Rola').valid">
             Wymagane
           </p>
 
@@ -37,14 +83,14 @@
           <div class="field">
             <div class="control">
               <textarea class="textarea"
-                  formControlName="content"
+                  formControlName="InfoDodatkowe"
                   (change)="saveAdChanges()"
                   [ngClass]="{
-                               'is-success' :  adForm.get('content').valid &&  adForm.get('content').dirty,
-                               'is-danger'  :  !adForm.get('content').valid
+                               'is-success' :  adForm.get('InfoDodatkowe').valid &&  adForm.get('InfoDodatkowe').dirty,
+                               'is-danger'  :  !adForm.get('InfoDodatkowe').valid
                              }">
               </textarea>
-              <p class="error" [hidden]="adForm.get('content').valid">Wypełnij pola poprawnie</p>
+              <p class="error" [hidden]="adForm.get('InfoDodatkowe').valid">Wypełnij pola poprawnie</p>
             </div>
           </div>
         </div>
